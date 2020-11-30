@@ -1,24 +1,10 @@
-# README
+# Веб-приложение "Пойдем на шашлыки"
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Системные характеристики
+Ruby version 2.7
 
-Things you may want to cover:
+Rails version 6.0.3
 
-* Ruby version
+Установка git clone git@github.com:edwardkv/bbq.git
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Перед запуском выполнить bundle && bundle exec rake db:migrate
