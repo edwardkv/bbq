@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  # Встроенный в девайз фильтр — посылает незалогиненного пользователя
+  # Просматривать профили могут и анонимы
   before_action :authenticate_user!, except: [:show]
 
   # Задаем объект @user для шаблонов и экшенов
@@ -14,7 +14,7 @@ class UsersController < ApplicationController
 
   def update
     if @user.update(user_params)
-      redirect_to @user, notice: 'controllers.users.updated'
+      redirect_to @user, notice: 'user updated'
     else
       render :edit
     end
