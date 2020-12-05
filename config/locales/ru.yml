@@ -37,3 +37,8 @@ ru:
   app:
     name: 'Вечеринки'
     company: 'Курносов ЭВ и Хороший программист'
+
+  error:
+    one: '%{count} ошибка'
+    few: '%{count} ошибки'
+    other: '%{count} ошибок'
