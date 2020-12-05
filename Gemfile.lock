@@ -72,6 +72,8 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    devise-i18n (1.9.2)
+      devise (>= 4.7.1)
     erubi (1.9.0)
     execjs (2.7.0)
     ffi (1.13.1)
@@ -156,6 +158,8 @@ GEM
     responders (3.0.1)
       actionpack (>= 5.0)
       railties (>= 5.0)
+    russian (0.6.0)
+      i18n (>= 0.5.0)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
     sassc (2.4.0)
@@ -210,10 +214,12 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
   devise
+  devise-i18n
   listen
   pg
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.4)
+  russian
   sass-rails (>= 6)
   sqlite3
   tzinfo-data
