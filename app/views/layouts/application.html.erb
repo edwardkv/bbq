@@ -20,12 +20,12 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <% if user_signed_in? %>
-          <%= link_to 'Профиль', current_user, class: 'nav-item nav-link' %>
-          <%= link_to 'Выйти', destroy_user_session_path,
+          <%= link_to t('views.profile'), current_user, class: 'nav-item nav-link' %>
+          <%= link_to t('devise.sessions.sign_out'), destroy_user_session_path,
                           method: :delete, class: 'nav-item nav-link' %>
         <% else %>
-          <%= link_to 'Войти', new_user_session_path, class: 'nav-item nav-link' %>
-          <%= link_to 'Зарегистрироваться',
+          <%= link_to t('devise.sessions.new.sign_in'), new_user_session_path, class: 'nav-item nav-link' %>
+          <%= link_to t('views.register'),
                           new_user_registration_path, class: 'nav-item nav-link' %>
         <% end %>
       </div>

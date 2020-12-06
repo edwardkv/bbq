@@ -44,10 +44,20 @@ ru:
     other: '%{count} ошибок'
 
   views:
+    profile: "Профиль"
+    register: "Зарегистрироваться"
+    edit_profile: "Редактировать профиль"
     back: "Назад"
     save: "Сохранить"
-
-  events:
-    are_you_sure: 'Вы уверены'
-    change: 'Изменить'
-    delete: 'Удалить'
+    or: "или"
+    organized: "Организовал"
+    no_organized: "Пользователь пока не организовал ни одного события"
+    form_has_errors: "В вашей форме"
+    events:
+      are_you_sure: 'Вы уверены'
+      change: 'Изменить'
+      delete: 'Удалить'
+      edit: 'Редактирование события'
+      events: 'События'
+      create: 'Создать событие'
+      new: 'Новое событие'
