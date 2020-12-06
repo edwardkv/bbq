@@ -42,3 +42,8 @@ ru:
     one: '%{count} ошибка'
     few: '%{count} ошибки'
     other: '%{count} ошибок'
+
+  events:
+    are_you_sure: 'Вы уверены'
+    change: 'Изменить'
+    delete: 'Удалить'
