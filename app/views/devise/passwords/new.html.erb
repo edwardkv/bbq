@@ -2,20 +2,20 @@
   <%= render "devise/shared/error_messages", resource: resource %>
   <div class="form-group">
     <div class="col-xs-6 col-sm-6 col-md-6">
-      <h2>Забыли пароль?</h2>
+      <h2><%= t('.forgot_your_password') %></h2>
     </div>
   </div>
 
   <div class="form-group">
     <div class="col-xs-6 col-sm-6 col-md-6>
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, class: "w-100" ,autocomplete: "email" %>
+    <%= f.email_field :email, autofocus: true, class: "form-control" ,autocomplete: "email" %>
     </div>
   </div>
 
   <div class="form-group">
     <div class="col-xs-6 col-sm-6 col-md-6">
-      <%= f.submit "Отправьте мне инструкции по сбросу пароля", class: "btn btn-primary" %>
+      <%= f.submit t('.send_me_reset_password_instructions'), class: "btn btn-primary" %>
     </div>
   </div>
 

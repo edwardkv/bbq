@@ -43,6 +43,10 @@ ru:
     few: '%{count} ошибки'
     other: '%{count} ошибок'
 
+  views:
+    back: "Назад"
+    save: "Сохранить"
+
   events:
     are_you_sure: 'Вы уверены'
     change: 'Изменить'
