@@ -5,6 +5,6 @@ Ruby version 2.7
 
 Rails version 6.0.3
 
-Установка git clone git@github.com:edwardkv/bbq.git
+Установка ```git clone git@github.com:edwardkv/bbq.git```
 
-Перед запуском выполнить bundle && bundle exec rake db:migrate
+Перед запуском выполнить ```bundle && bundle exec rake db:migrate```
