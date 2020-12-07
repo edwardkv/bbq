@@ -61,3 +61,8 @@ ru:
       events: 'События'
       create: 'Создать событие'
       new: 'Новое событие'
+
+  helpers:
+    submit:
+      create: "Создать"
+      update: "Сохранить"
