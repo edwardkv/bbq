@@ -52,8 +52,6 @@ class EventsController < ApplicationController
 
   private
 
-  # Будем искать событие не среди всех,
-  # а только у текущего пользователя по id
   def set_current_user_event
     @event = current_user.events.find(params[:id])
   end
