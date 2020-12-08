@@ -20,7 +20,7 @@ class User < ApplicationRecord
     Subscription.where(user_id: nil, user_email: self.email)
                 .update_all(user_id: self.id)
   end
-  
+
   def set_name
     self.name = "#{I18n.t('models.user.friend')} №#{rand(777)}" if self.name.blank?
   end

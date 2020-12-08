@@ -50,6 +50,10 @@
   <footer class="mt-5 py-3 bg-light">
     <div class="container-fluid">
       <p>&copy; <%= t("app.company") %></p>
+      <ul>
+        <li><%= link_to 'English', root_path(locale: :en), class: "text-secondary" %></li>
+        <li><%= link_to 'Русский', root_path(locale: :ru), class: "text-secondary"%></li>
+      </ul>
     </div>
   </footer>
 
