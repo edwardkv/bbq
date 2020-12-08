@@ -4,6 +4,10 @@ module ApplicationHelper
     asset_pack_path('media/images/user.png')
   end
 
+  def fa_icon(icon_class)
+    content_tag 'span', '', class: "fa fa-#{icon_class}"
+  end
+
   def bootstrap_flash(opts = {})
     flash.each do |msg_type, message|
       concat(content_tag(:div, message, class: "alert #{bootstrap_class_for(msg_type)}", role: "alert") do

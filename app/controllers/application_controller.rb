@@ -12,7 +12,12 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.permit(:sign_in, keys: [:email, :password])
   end
 
-  def current_user_can_edit?(event)
-    user_signed_in? && event.user == current_user
+  def current_user_can_edit?(model)
+    # If the model has a user and he is logged in, try to take .event from her
+    # If there is one, check its user for equality current_user.
+    user_signed_in? && (
+      model.user == current_user ||
+        (model.try(:event).present? && model.event.user == current_user)
+    )
   end
 end
