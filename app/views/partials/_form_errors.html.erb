@@ -3,7 +3,7 @@
 <% if errors.any? %>
   <div class="alert alert-danger">
     <div class="lead buffer-bottom">
-      <%= t('views.form_has_errors') %> <%=  I18n.t :error, count: errors.count %>
+      <%= t('views.form_has_errors') %> <%=  t :error, count: errors.count %>
     </div>
 
     <ul>
