@@ -9,6 +9,9 @@ gem 'devise'
 gem 'devise-i18n'
 gem 'rails-i18n'
 
+gem 'carrierwave'
+gem 'rmagick'
+
 gem 'uglifier'
 
 gem 'puma', '~> 4.1'
