@@ -127,3 +127,4 @@ en:
   subscriptions:
     subscription:
       destroy_confirm: 'Are you sure you want to delete this subscription?'
+      has_email: 'User with this email is already registered'

@@ -95,3 +95,4 @@ ru:
   subscriptions:
     subscription:
       destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
+      has_email: 'Пользователь с таким email уже зарегистрирован'
