@@ -49,6 +49,12 @@ en:
         address: 'Venue'
         datetime: 'Date and time'
         description: 'Description'
+      comment:
+        user_name: 'Your name'
+        body: 'Comment'
+      subscription:
+        user_name: 'Your name'
+        user_email: 'Your email'
 
   # Translating messages sent by the controller
   controllers:
@@ -62,6 +68,9 @@ en:
       destroyed: 'Comment deleted'
       created: 'Your comment has been added'
       error: 'Error with comment'
+    comment:
+      user_name: 'Your name'
+      body: 'Comment'
     subscriptions:
       created: 'You are subscribed to this event'
       destroyed: 'Member unsubscribed'
@@ -100,6 +109,11 @@ en:
       events: 'Events'
       create: 'Create event'
       new: 'New event'
+      calling: 'Calling'
+      i_go: 'I will go'
+      who_go: 'Who will go'
+      send: 'Send'
+      subscribe: 'Subscribe'
 
   helpers:
     submit:
