@@ -36,6 +36,10 @@ en:
     models:
       user: 'User'
       event: 'Event'
+      photo: 'Photo'
+      subscription: 'Subscription'
+      comment: 'Comment'
+
 
     # Translating model attributes
     attributes:
