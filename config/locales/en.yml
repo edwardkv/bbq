@@ -56,6 +56,8 @@ en:
       subscription:
         user_name: 'Your name'
         user_email: 'Your email'
+      photo:
+        photo: 'Photo'
 
   # Translating messages sent by the controller
   controllers:
@@ -76,6 +78,10 @@ en:
       created: 'You are subscribed to this event'
       destroyed: 'Member unsubscribed'
       error: 'Subscribe / unsubscribe did not work'
+    photos:
+      error: 'Something is wrong with the photo'
+      created: 'You have added a photo to the event'
+      destroyed: 'You deleted the photo'
 
   # texts in models
   models:
@@ -115,11 +121,13 @@ en:
       who_go: 'Who will go'
       send: 'Send'
       subscribe: 'Subscribe'
+      added: 'Added'
 
   helpers:
     submit:
-      create: "Create"
-      update: "Save"
+      create: 'Create'
+      update: 'Save'
+      upload: 'Upload'
 
   comments:
     comment:
