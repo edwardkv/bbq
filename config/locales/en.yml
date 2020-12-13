@@ -159,3 +159,10 @@ en:
       event: 'Event'
       datetime: 'Will take place'
       owner: 'Organizer'
+    photo:
+      new_photo: 'New Photo'
+      title: 'New photo uploaded'
+      author: 'Author'
+      event: 'Event'
+      datetime: 'Will take place'
+      owner: 'Organizer'
