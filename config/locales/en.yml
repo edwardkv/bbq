@@ -136,8 +136,26 @@ en:
   comments:
     comment:
       destroy_confirm: 'Are you sure you want to delete this comment?'
+      new_comment: 'New comment'
 
   subscriptions:
     subscription:
       destroy_confirm: 'Are you sure you want to delete this subscription?'
       has_email: 'User with this email is already registered'
+      new_subscription: 'New subscription to'
+
+  event_mailer:
+    comment:
+      title: 'New comment'
+      author: 'Author'
+      event: 'Event'
+      datetime: 'Will take place'
+      owner: 'Organizer'
+    subscription:
+      title: 'New Subscription'
+      name: 'Name'
+      email: 'Email'
+      author: 'Author'
+      event: 'Event'
+      datetime: 'Will take place'
+      owner: 'Organizer'

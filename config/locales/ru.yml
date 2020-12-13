@@ -106,8 +106,26 @@ ru:
   comments:
     comment:
       destroy_confirm: 'Вы уверены, что хотите удалить этот комменатрий?'
+      new_comment: 'Новый комментарий'
 
   subscriptions:
     subscription:
       destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
       has_email: 'Пользователь с таким email уже зарегистрирован'
+      new_subscription: 'Новая подписка на'
+
+  event_mailer:
+    comment:
+      title: 'Новый комментарий'
+      author: 'Автор'
+      event: 'Событие'
+      datetime: 'Состоится'
+      owner: 'Организатор'
+    subscription:
+      title: 'Новая подписка'
+      name: 'Имя'
+      email: 'Email'
+      author: 'Автор'
+      event: 'Событие'
+      datetime: 'Состоится'
+      owner: 'Организатор'
