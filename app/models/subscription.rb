@@ -9,7 +9,7 @@ class Subscription < ApplicationRecord
 
   validates :user, uniqueness: {scope: :event_id}, if: -> { user.present? }
   validates :user_email, uniqueness: {scope: :event_id}, unless: -> { user.present? }
-  validate :check_user_email?
+  validate :check_email_for_exists_register_user?
   validate :user_is_not_author?
 
   def user_name
@@ -42,7 +42,7 @@ class Subscription < ApplicationRecord
   # method for checking anonymous user's email for compliance
   # same email from registered user
   # email is not case sensitive
-  def check_user_email?
+  def check_email_for_exists_register_user?
     if user_id.blank? && user_email.present? &&  User.where("email LIKE ?", user_email).present?
        errors.add(:email, I18n.t('subscriptions.subscription.has_email'))
     end
