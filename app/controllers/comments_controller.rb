@@ -32,7 +32,7 @@ class CommentsController < ApplicationController
 
   def notify_subscribers(event, comment)
     # Collect all subscribers and the author of the event into an array of mails, exclude duplicate
-    all_emails = (event.subscriptions.map(&:user_email) + [event.user.email]).uniq
+    all_emails = (event.subscriptions.map(&:user_email) + [event.user.email]-[comment.user.email]).uniq
 
     # We send mailings to addresses from this array
     # As in subscriptions, take EventMailer and its comment method with parameters
