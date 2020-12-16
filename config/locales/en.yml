@@ -88,6 +88,8 @@ en:
       error: 'Something is wrong with the photo'
       created: 'You have added a photo to the event'
       destroyed: 'You deleted the photo'
+      destroy: 'Delete photo?'
+      added: 'Added'
 
   # texts in models
   models:

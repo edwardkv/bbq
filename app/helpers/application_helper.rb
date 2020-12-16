@@ -50,6 +50,12 @@ module ApplicationHelper
     nil
   end
 
+  def draw_delete_photo_basket?(event, photo)
+    if current_user_can_edit?(event)
+      link_to fa_icon("trash-alt"), event_photo_path(@event, photo),
+              method: :delete, data: {confirm: t('controllers.photos.destroy')}
+    end
+  end
 
   private
   def bootstrap_class_for(level)
