@@ -12,6 +12,8 @@ require("bootstrap")
 
 import "bootstrap/dist/js/bootstrap";
 
+import "./maps.js";
+
 import "../stylesheets/application";
 document.addEventListener("turbolinks:load", function() {
     $(function () {
