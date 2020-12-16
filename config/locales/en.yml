@@ -54,6 +54,7 @@ en:
         address: 'Venue'
         datetime: 'Date and time'
         description: 'Description'
+        pincode: 'Pin access code'
       comment:
         user_name: 'Your name'
         body: 'Comment'
@@ -69,6 +70,7 @@ en:
       created: 'You have created a new event'
       updated: 'You have updated the event'
       destroyed: 'You have deleted the event :('
+      wrong_pincode: 'Invalid pin code!'
     users:
       updated: 'You have updated your profile'
     comments:
@@ -126,6 +128,8 @@ en:
       send: 'Send'
       subscribe: 'Subscribe'
       added: 'Added'
+      to_main: 'Home'
+      access_pincode: 'Access only by pin code'
 
   helpers:
     submit:
