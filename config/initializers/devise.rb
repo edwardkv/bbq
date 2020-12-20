@@ -311,6 +311,7 @@ Devise.setup do |config|
   #
   #ActionMailer::Base.default_url_options = { :host => "localhost:3000" }
 
-  ActionMailer::Base.default_url_options =  { :host => 'edward-letsgo.herokuapp.com' }
-  #config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  #ActionMailer::Base.default_url_options =  { host: 'edward-letsgo.herokuapp.com' }
+  #config.action_mailer.default_url_options = { host: 'edward-letsgo.herokuapp.com' }
+  #config.action_mailer.default_url_options = { host: => 'localhost:3000' }
 end

@@ -35,6 +35,7 @@ group :development, :test do
   gem 'sqlite3'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'listen'
+  gem 'letter_opener'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

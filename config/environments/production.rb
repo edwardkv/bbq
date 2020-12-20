@@ -134,7 +134,7 @@ Rails.application.configure do
   #   :enable_starttls_auto => true
   # }
 
-  config.action_mailer.default_url_options = { :host => 'edward-letsgo.herokuapp.com' }
+  config.action_mailer.default_url_options = { host: 'edward-letsgo.herokuapp.com' }
 
   config.action_mailer.delivery_method = :smtp
 
@@ -146,5 +146,4 @@ Rails.application.configure do
     authentication: 'plain',
     enable_starttls_auto: false
   }
-
 end
