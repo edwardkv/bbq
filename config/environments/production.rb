@@ -134,8 +134,9 @@ Rails.application.configure do
   #   :enable_starttls_auto => true
   # }
 
-  config.action_mailer.delivery_method = :mailjet # do not use in dev mode!
-  #config.action_mailer.default_url_options = { host: 'edward-letsgo.herokuapp.com' }
+
+  config.action_mailer.default_url_options = { host: 'yes2021.ru' }
+  config.action_mailer.delivery_method = :mailjet # 
 
   #config.action_mailer.delivery_method = :smtp
 
