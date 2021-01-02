@@ -134,16 +134,17 @@ Rails.application.configure do
   #   :enable_starttls_auto => true
   # }
 
-  config.action_mailer.default_url_options = { host: 'edward-letsgo.herokuapp.com' }
+  config.action_mailer.delivery_method = :mailjet # do not use in dev mode!
+  #config.action_mailer.default_url_options = { host: 'edward-letsgo.herokuapp.com' }
 
-  config.action_mailer.delivery_method = :smtp
+  #config.action_mailer.delivery_method = :smtp
 
-  config.action_mailer.smtp_settings = {
-    address:  ENV['SMTP_HOST'],
-    port: '25',
-    user_name: ENV['SMTP_LOGIN'], # не используйте для тестов свои реальные ящики
-    password: ENV['SMTP_PASS'],
-    authentication: 'plain',
-    enable_starttls_auto: false
-  }
+  # config.action_mailer.smtp_settings = {
+  #   address:  ENV['SMTP_HOST'],
+  #   port: '25',
+  #   user_name: ENV['SMTP_LOGIN'], # не используйте для тестов свои реальные ящики
+  #   password: ENV['SMTP_PASS'],
+  #   authentication: 'plain',
+  #   enable_starttls_auto: false
+  # }
 end

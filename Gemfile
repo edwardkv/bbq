@@ -29,6 +29,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 group :production do
   gem 'pg'
+  gem "mailjet"
 end
 
 group :development, :test do
