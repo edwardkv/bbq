@@ -14,7 +14,7 @@
   <div class="form-group">
     <%= f.label :datetime %>
     <p>
-      <%= f.text_field :datetime, value: (l @event.datetime, format: '%d.%m.%Y %H:%M' ) , class: ' datepicker-here', data: { position: "right top", timepicker: "true" } %>
+      <%= f.text_field :datetime, value: (l @event.datetime, format: '%d.%m.%Y %H:%M' if @event.datetime.present? ) , class: ' datepicker-here', data: { position: "right top", timepicker: "true" } %>
     </p>
 
   </div>
