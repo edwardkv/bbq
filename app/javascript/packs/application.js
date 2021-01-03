@@ -40,3 +40,6 @@ const images = require.context('../images', true)
 import "@fortawesome/fontawesome-free/js/all";
 
 import "./lightbox.js";
+
+import "air-datepicker/dist/css/datepicker.min.css";
+import "air-datepicker/dist/js/datepicker.min";

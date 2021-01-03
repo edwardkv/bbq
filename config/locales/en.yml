@@ -30,6 +30,7 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
+
   # Translating models
   activerecord:
     # Translation of model names
