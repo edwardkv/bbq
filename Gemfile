@@ -33,11 +33,29 @@ group :production do
 end
 
 group :development, :test do
+  gem 'byebug'
+  gem 'rspec-rails', '~> 3.4'
+  gem 'factory_bot_rails'
+  gem 'shoulda-matchers'
+end
+
+group :development do
   gem 'sqlite3'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'listen'
   gem 'letter_opener'
+  gem 'capistrano', '~> 3.11.0'
+  gem 'capistrano-rails', '~> 1.3.0'
+  gem 'capistrano-passenger', '~> 0.2'
+  gem 'capistrano-rbenv', '~> 2.1'
+  gem 'capistrano-bundler', '~> 1.4.0'
+  gem 'capistrano-resque', '~> 0.2.3', require: false
 end
 
+
+group :test do
+  gem 'capybara'
+  gem 'launchy'
+end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 #gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
