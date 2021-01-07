@@ -1,9 +1,13 @@
 class ApplicationController < ActionController::Base
+  include Pundit
+
+  protect_from_forgery with: :exception
   before_action :set_locale
   before_action :configure_permitted_parameters, if: :devise_controller?
 
   helper_method :current_user_can_edit?
   helper_method :current_user_owns?
+  rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
 
   def configure_permitted_parameters
 
@@ -39,5 +43,16 @@ class ApplicationController < ActionController::Base
     parsed_locale = params[:locale]
     I18n.available_locales.map(&:to_s).include?(parsed_locale) ?
       parsed_locale.to_sym : nil
+  end
+
+  def pundit_user
+    UserContext.new(current_user, cookies)
+  end
+
+  protected
+
+  def user_not_authorized
+    flash[:alert] = t('pundit.not_authorized')
+    redirect_to(request.referrer || root_path)
   end
 end

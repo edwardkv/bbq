@@ -12,7 +12,7 @@ gem 'rails-i18n'
 gem 'carrierwave'
 gem 'rmagick'
 gem 'fog-aws'
-
+gem 'pundit', '~> 2.1'
 gem 'uglifier'
 
 gem 'puma', '~> 4.1'

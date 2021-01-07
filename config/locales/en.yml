@@ -173,3 +173,6 @@ en:
       event: 'Event'
       datetime: 'Will take place'
       owner: 'Organizer'
+
+  pundit:
+    not_authorized: 'not authorized'
