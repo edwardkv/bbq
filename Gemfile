@@ -13,6 +13,7 @@ gem 'carrierwave'
 gem 'rmagick'
 gem 'fog-aws'
 gem 'pundit', '~> 2.1'
+gem 'resque', '~> 2.0.0'
 gem 'uglifier'
 
 gem 'puma', '~> 4.1'
@@ -41,7 +42,6 @@ end
 
 group :development do
   gem 'sqlite3'
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'listen'
   gem 'letter_opener'
   gem 'capistrano', '~> 3.11.0'

@@ -10,7 +10,7 @@ class SubscriptionsController < ApplicationController
       # If saved, send a letter
       # Write the name of the class, then the method and pass the parameters
       # And deliver with the .deliver_now method (that is, in the same stream)
-      EventMailer.subscription(@event, @new_subscription).deliver_now
+      EventMailer.subscription(@event, @new_subscription).deliver_later
 
       redirect_to @event, notice: I18n.t('controllers.subscriptions.created')
     else

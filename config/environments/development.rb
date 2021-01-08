@@ -75,4 +75,8 @@ Rails.application.configure do
 
   config.action_mailer.delivery_method = :letter_opener
   config.action_mailer.perform_deliveries = true
+
+  config.active_job.queue_adapter = :resque
+  # Префикс для имени очередей
+  config.active_job.queue_name_prefix = "bbq_#{Rails.env}"
 end
