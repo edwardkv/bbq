@@ -9,7 +9,6 @@ class CommentsController < ApplicationController
     if @new_comment.save
       # notify all subscribers of a new comment
       notify_subscribers(@event, @new_comment)
-
       redirect_to @event, notice: I18n.t('controllers.comments.created')
     else
       render 'events/show', alert: I18n.t('controllers.comments.error')
