@@ -38,7 +38,8 @@ class CommentsController < ApplicationController
     # As in subscriptions, take EventMailer and its comment method with parameters
     # And send in the same stream
     all_emails.each do |mail|
-      EventMailer.comment(event, comment, mail).deliver_later
+      #EventMailer.comment(event, comment, mail).deliver_later
+      MailDeliveryJob.perform_later(event, comment, mail)
     end
   end
 
