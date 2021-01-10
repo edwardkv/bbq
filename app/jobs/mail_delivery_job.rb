@@ -1,11 +1,11 @@
 class MailDeliveryJob < ApplicationJob
   queue_as :default
 
-  def perform(event, entity)
-    name_of_entity = entity.class.to_s
-    all_emails = (event.subscriptions.map(&:user_email) + [event.user.email] - [entity&.user&.email]).uniq
-
-    case name_of_entity
+  def perform(entity)
+    event = entity.event
+    all_emails = (event.subscriptions.map(&:user_email) + [event&.user.email] - [entity&.user&.email]).uniq
+    
+    case entity.class.to_s
     when "Comment"
       all_emails.each { |mail| EventMailer.comment(event, entity, mail).deliver_later }
     when "Photo"

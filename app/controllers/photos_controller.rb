@@ -6,11 +6,10 @@ class PhotosController < ApplicationController
   def create
     # Создаем новую фотографию у нужного события @event
     @new_photo = @event.photos.build(photo_params)
-
     @new_photo.user = current_user
 
     if @new_photo.save
-      MailDeliveryJob.perform_later(@event, @photo)
+      MailDeliveryJob.perform_later(@new_photo)
       redirect_to @event, notice: I18n.t('controllers.photos.created')
     else
       render 'events/show', alert: I18n.t('controllers.photos.error')
