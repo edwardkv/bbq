@@ -1,7 +1,7 @@
 class MailDeliveryJob < ApplicationJob
   queue_as :default
 
-  def perform(event, entity, mail='')
+  def perform(event, entity)
     name_of_entity = entity.class.to_s
     all_emails = (event.subscriptions.map(&:user_email) + [event.user.email] - [entity&.user&.email]).uniq
 
