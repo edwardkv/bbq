@@ -9,4 +9,4 @@ Rails version 6.0.3
 
 Перед запуском выполнить ```bundle && bundle exec rake db:migrate```
 
-Версия приложения на heroku https://lets-go-bbq.herokuapp.com/
+Версия приложения на heroku https://edward-letsgo.herokuapp.com/
