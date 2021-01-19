@@ -14,4 +14,5 @@ Rails version 6.0.3
 Также для корректной работы приложения необходимо прописать переменные окружения для подключения к сервису Amazon S3 Storage: S3_ACCESS_KEY,S3_BUCKET_NAME,S3_BUCKET_REGION, и для отправки почты  MAILJET_SENDER, MAILJET_API_KEY, MAILJET_SECRET_KEY
 
 Версия приложения на heroku https://edward-letsgo.herokuapp.com/
+
 Версия приложения на VPS https://bbq.yes2021.ru/
