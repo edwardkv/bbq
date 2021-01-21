@@ -16,6 +16,7 @@ Rails version 6.0.3
 Перед запуском выполнить ```bundle && bundle exec rake db:migrate``` ```yarn```
 
 Также для корректной работы приложения необходимо прописать переменные окружения для подключения к сервису Amazon S3 Storage: S3_ACCESS_KEY,S3_BUCKET_NAME,S3_BUCKET_REGION, и для отправки почты  MAILJET_SENDER, MAILJET_API_KEY, MAILJET_SECRET_KEY
+
 Для этого переименовать файл ```.env.example``` в ```.env```
 Переименовать файл ```config/database.example.yml``` в ```config/database.yml``` 
 
