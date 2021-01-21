@@ -16,6 +16,8 @@ gem 'pundit', '~> 2.1'
 gem 'resque', '~> 2.0.0'
 gem 'uglifier'
 
+gem 'dotenv-rails', require: 'dotenv/rails-now', groups: [:development, :test]
+
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
@@ -32,6 +34,8 @@ gem "mailjet"
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'omniauth-vkontakte'
+
+
 
 group :production do
   gem 'pg'
