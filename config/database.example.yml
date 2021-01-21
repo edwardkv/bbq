@@ -21,7 +21,10 @@ test:
   database: db/test.sqlite3
 
 production:
+  <<: *default
   adapter: postgresql
+  host: localhost
+  port: 5432
   user: USER 
   password: PASSWORD
   database: DATABASE
