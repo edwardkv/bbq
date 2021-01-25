@@ -13,20 +13,28 @@ Rails version 6.0.3
 
 Установка
 
-```git clone git@github.com:edwardkv/bbq.git```
+```
+git clone git@github.com:edwardkv/bbq.git
+```
 
 Перед запуском выполнить 
 
-```bundle && bundle exec rake db:migrate```
+```
+bundle && bundle exec rake db:migrate
 
-```yarn```
+yarn
+```
 
 Также для корректной работы приложения необходимо прописать переменные окружения для подключения к сервису Amazon S3 Storage: S3_ACCESS_KEY,S3_BUCKET_NAME,S3_BUCKET_REGION, и для отправки почты  MAILJET_SENDER, MAILJET_API_KEY, MAILJET_SECRET_KEY
 
 Для этого переименовать файл ```.env.example``` в ```.env```
 
-```cp .env.example .env```
+```
+cp .env.example .env
+```
 
 Переименовать файл ```config/database.example.yml``` в ```config/database.yml``` 
 
-```cp config/database.example.yml config/database.yml``` 
+```
+cp config/database.example.yml config/database.yml
+``` 
